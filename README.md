@@ -64,5 +64,5 @@ Some of the important files and folders are listed below:
 - We have prevented unecessary updation of state and co-variance matrix when the state parameters px and py is zero which have improved the RMSE for the filters.
 - Further skipping the prediction state when a sensor measurement arrives at the same time of the previous sensor measurement that is difference between timestamps of two sensor measurements is zero. This has helped in reduction of unecessary calculations.
 
-** Some Observed Demerits **
+**Some Observed Demerits**
 - There is certain data which is hardcoded (like the acceleration noise) which would not be a good practice for an actual Self Driving Car because the acceleration won't be constant at all times. If the car moves in reverse direction the acceleration will be in a total opposite direction of the hardcoded value.
