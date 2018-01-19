@@ -1,13 +1,11 @@
 
 # Extended Kalman Filters
-___
 
 The presented project combines the data collected by LASER and RADAR sensors to locate obstacles encountered by a car while driving through a pathway.
 
 This project is part of Udacity's Self Driving Car Engineer Nanodegree and needs the simulator provided by Udacity to execute the project.
 
 ## Contents
-----
 
 Some of the important files and folders are listed below:
 
@@ -37,7 +35,6 @@ Some of the important files and folders are listed below:
 - Xcode IDE project file used to build the project files
 
 ## Usage
-----
 
 1. Run the ExtendedKF shell script located in **Debug** folder.
 2. Run the Udacity's simulator and select the 'Extended KF Project'.
@@ -45,7 +42,7 @@ Some of the important files and folders are listed below:
 4. The simulator will run and display the RMSE while the State and Co-variance matrix will be displayed in the console.
 
 ## Observations
-----
+
 - The RMSE values with both LASER and RADAR sensors and RMSE with only one individual sensor are as follows:
 
 |Case  |Px    |Py    |Vx    |Vy    |
@@ -62,7 +59,6 @@ Some of the important files and folders are listed below:
 ![Extended Kalman Filters](output.png)
 
 ## Conclusion
-----
 
 - The project clearly indicates that the combination of sensors is the optimum way to gather information about obstacles around the Self Driving Car and Kalman Filter is the optimum way for Sensor Fusion.
 - We have prevented unecessary updation of state and co-variance matrix when the state parameters px and py is zero which have improved the RMSE for the filters.
